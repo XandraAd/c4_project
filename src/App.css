@@ -1,11 +1,10 @@
+
+
 .advance {
   background-color: var(--color-hero);
   position: relative;
   border: 2px solid transparent;
   padding-top: 2rem;
-
-
-
 }
 
 .advance-text {
@@ -170,310 +169,157 @@
 
 
 /*++++++++++++++++ MOBILE SCREEN +++++++++++++++*/
-@media screen and (min-width: 300px) and (max-width: 650px) {
-  .body{
-    width: 100%;
-    border: 2px solid green;
-  }
+@media screen and (min-width: 300px) and (max-width: 550px) {
   .advance {
     border: 2px solid transparent;
     padding-top: 0.2rem;
-    height: 150vh;
-border: 2px solid green;
+    height: 300vh;
+    width: 670px;
   }
-
-  .advance-text h2 {
-    margin-left: 50px;
-
-    padding-inline: 1rem;
-
-    margin-top: 2rem;
-    font-family: 'Roboto';
-  }
-
-  .advance-text p {
-    display: inline-block;
-    padding-inline: 1.5rem;
-    width: 340px;
-    color: var(--color-text1);
-    font-size: 18px;
-    font-family: 'Roboto';
-  }
-
-  .cardInfo {
-    display: block;
-    margin-inline: 1rem;
-  }
-
-  .cardInfo .card {
-    padding: 10px;
     
-    
-    
-    margin: 1rem 1rem 4rem 1rem;
-    height: 15rem;
-    border-radius: 0.5rem;
-    
+ 
+
+    .advance-text h2 {
+      margin-inline: 6rem;
+      padding-inline: 1rem;
+      margin-top: 18rem;
+      font-family: "Roboto";
+      font-size: 54px;
+    }
+
+    .advance-text p {
+      display: inline-flex;
+      flex-direction: row-reverse;
+      padding-inline: 2rem;
+      width: 450px;
+      height: 154px;
+      margin-left: 8rem;
+      font-size: 24px;
+      text-align-last: center;
+      color: var(--color-text);
+      
+     
+    }
+
+    .cardInfo {
+      display: block;
+     
+    }
+
+    .cardInfo .card {
+      padding: 10px;
+
+      margin: 2rem 2rem 8rem 2rem;
+      height: 25rem;
+      border-radius: 0.5rem;
+    }
+
+    .cardInfo .seperator {
+      height: 2px;
+      padding: 2px;
+      background-color: var(--color-primary);
+      position: absolute;
+      top: 45rem;
+      left: -140px;
+      width: 100vh;
+      margin-left: 1rem;
+      z-index: 1;
+      transform: rotate(90deg);
+      position: absolute;
+    }
+
+    .card img {
+      margin: 1rem 0 0 0rem;
+      width: 100px;
+      top: -4.5rem;
+      padding: 10px;
+      border-radius: 3rem;
+     
+    }
+
+    .card h3 {
+      margin-block:5rem 1.5rem;
+      font-size: 32px;
+    }
+
+    .cardInfo .card p {
+      color: var(--color-text);
+      width: 300px;
+      font-size: 22px;
+    }
+
+    .boost_link {
+      background-image: url("./assets/images/bg-boost-mobile.svg");
+      height: 45vh;
+      width: 680px;
    
-   
-}
+    }
 
-  .cardInfo .seperator {
-    height: 4px;
-    padding: 2px;
-    background-color: var(--color-primary);
-    position: absolute;
-    top: 25rem;
-    left: -200px;
-    width: 100vh;
-    margin-left: 1rem;
-    z-index: 1;
-    transform: rotate(90deg); 
-    position: absolute;
-    
-  }
+    .boost_link h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-inline: 1rem;
+      padding-top: 5rem;
+      font-size: 54px;
+     
+    }
 
-  .card img {
-    margin: 1rem 0 0 0rem;
+    .boost_link button {
+      margin-left: 12.5rem;
+
+      font-family: "Roboto";
+      font-size: 32px;
+      width: 300px;
+      margin-top: 3rem;
+    }
+
+    .footer {
+      display: inline-block;
+      width:680px;
+      padding-inline: 3rem;
+      height: 100vh;
+    }
+
+    .footer h3 {
+      margin-top: 0rem;
+      padding: 2rem 12.5rem;
+      font-size: 64px;
+    }
+
+    .footer .footer-info {
+      display: block;
+      margin-left: 15.5rem;
+    }
+
+    .footer .footer-info p {
+      margin-block: 1.4rem;
+      color: var(--color-bg);
+      font-size: 32px;
+    }
+
+    .footer .footer-info ul li {
+      list-style: none;
+      line-height: 1.5;
+      color: var(--color-bg);
+      font-size: 16px;
+      font-family: "poppins";
+      margin-bottom: 0.5rem;
+    }
+
+    .footer .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-block: 2.5rem;
+      border: 2px solid transparent;
+    }
+
+    .footer img {
   
-    top: -2.5rem;
-    padding: 6px;
-    
-  }
-
-  .card h3 {
-    margin-block: 1.5rem;
-  }
-
-  .cardInfo .card p {
-    color: var(--color-text);
-    width: 250px;
-    
-}
-
-  .boost_link {
-    background-image: url("./assets/images/bg-boost-mobile.svg");
-    height: 25vh;
-  }
-
-  .boost_link h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding-inline: 1rem;
-    padding-top: 2rem;
-
-  }
-
-  .boost_link button {
-    margin-left: 4.5rem;
-   
-    font-family: 'Roboto';
-    font-size: 16px;
-    width: 250px;
-  }
-
-  .footer {
-    display: inline-block;
-width: 100%;
-    padding-inline: 3rem;
-    height: 70vh;
+      width: 25px;
+      height: 25px;
+    }
   }
 
 
-  .footer h3 {
-
-    margin-top: 0rem;
-    padding: 1rem 5.5rem;
-
-  }
-
-  .footer .footer-info {
-    display: block;
-    margin-left: 8rem;
-   
-  }
-
-  .footer .footer-info p {
-    margin-block: 1.4rem;
-    color: var(--color-bg);
-    font-size: 14px;
-  }
-
-  .footer .footer-info ul li {
-    list-style: none;
-    line-height: 1.5;
-    color: var(--color-bg);
-    font-size: 10px;
-    font-family: "poppins";
-    margin-bottom: 0.5rem;
-  }
-
-  .footer .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-block: 2.5rem;
-    border: 2px solid transparent;
-  }
-
-  .footer img {
-    color: var(--color-bg);
-    width: 15px;
-    height: 15px;
-  }
-}
-
-/*++++++++++++++++ TABLET SCREEN +++++++++++++++*/
-@media screen and (min-width: 460px) and (max-width: 1020px) {
-
-
-  .advance-text {
-    margin-block: .5rem;
-    border: 2px solid red;
-    width: 100%;
-  }
-
-  .advance-text h2 {
-    margin-inline: 7rem;
-
-    width: 50%;
-    padding-inline: 4rem;
-    padding-block: .5rem;
-    font-size: 28px;
-
-  }
-
-  .advance-text p {
-    margin-inline: 7rem;
-
-    margin-bottom: 2.5rem;
-
-    line-height: 1;
-
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    color: var(--color-text);
-    font-size: 16px;
-  }
-
-
-
-  .cardInfo {
-
-    height: 20rem;
-    width: 80%;
-    margin-inline: 3rem 2rem;
-
-  }
-
-  .cardInfo .card {
-    padding: 5px;
-
-    margin-inline: .5rem;
-    height: 10rem;
-    border-radius: 0.5rem;
-
-  }
-
-  .cardInfo .card p {
-
-    font-size: 12px;
-  }
-
-  .cardInfo .seperator {
-    height: 0px;
-    padding: .5px;
-
-    top: 7rem;
-
-    margin-left: .5rem;
-
-  }
-
-  .card img {
-    margin: 1rem 0 0 -5rem;
-    position: absolute;
-    top: -2.5rem;
-    left: 6rem;
-    padding: 3px;
-
-  }
-
-  .card h3 {
-    margin-block: 2rem 1rem;
-  }
-
-  .boost_link {
-
-
-    height: 20vh;
-  }
-
-  .boost_link h2 {
-
-    font-size: 28px;
-
-    padding-inline: 10rem;
-    padding-top: 3rem;
-  }
-
-  .boost_link button {
-    padding: .5rem;
-    margin-left: 15rem;
-
-    width: 100px;
-
-  }
-
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: var(--color-footer-bg);
-    padding-inline: 3rem;
-    height: 20vh;
-  }
-
-  .footer h3 {
-    font-size: 28px;
-
-  }
-
-  .footer .footer-info {
-    display: flex;
-    justify-content: space-around;
-    margin-block: .5rem;
-
-  }
-
-  .footer .footer-info p {
-    margin-block: 1.2rem;
-    color: var(--color-bg);
-    font-size: 10px;
-
-  }
-
-  .footer .footer-info ul li {
-
-    line-height: 1;
-
-    font-size: 8px;
-    font-family: "roboto";
-    margin-bottom: 0.5rem;
-  }
-
-  .footer .social-icons {
-
-    gap: 0.2rem;
-    margin-block: 2rem;
-
-  }
-
-  .footer img {
-
-    width: 10px;
-    height: 10px;
-  }
-}

@@ -19,7 +19,8 @@
 }
 
 body {
- 
+ width: 100vw;
+ height: 100vh;
   position: relative;
   font-family: "Roboto", "Poppins", sans-serif;
  
@@ -79,14 +80,14 @@ color: var(--color-bg);
 .hero {
   display: grid;
   grid-template-columns: 55% 45%;
-  width: 100%;
+
   margin-bottom: 4rem;
 }
 
 .heroLeft {
   margin-block: 1rem;
   margin-left: 5rem;
-  width: 80%;
+
 }
 
 .heroLeft h1 {
@@ -176,27 +177,7 @@ color: var(--color-bg);
 
 }
 
-/*.shortened {
-  /* Adjust the positioning and layout of the shortened links container 
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Set the gap between individual shortened links 
-  margin-top: 5rem;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  color: aqua;
-}*/
 
-/*.form {
-  /* Style for individual shortened link elements 
-  display: flex;
-  flex-direction: column;
-  border: 2px solid red;
-  padding: 10px;
-  background-color: #fff; /* Optional: set a background color 
-}*/
 .returned_link{
   display: flex;
   flex-direction: column;
@@ -213,11 +194,6 @@ color: var(--color-bg);
   
 }
 
-
-
-
-
-
 .returned_link a {
   color: var(--color-primary);
 }
@@ -227,52 +203,60 @@ color: var(--color-bg);
 
 
 /*++++++++++++++++ MOBILE SCREEN +++++++++++++++*/
-@media screen and (min-width: 300px) and (max-width: 450px) {
-  .body{
+@media screen and (min-width: 300px) and (max-width:550px) {
+ 
+
   
-    border: 2px solid green;
-  }
 
   
   .navigation {
-    width: 100%;
-    border: 2px solid green;
- 
+   
+  
+ width: 680px;
   }
 
   .logo a,
   .loginSection a {
-    display: none;
+ display: none;
   }
 
   .menu-icon {
     display: flex;
     position: fixed;
-    left: 20rem;
+    left: 38rem;
   }
 
   .hero {
-    display: block;
-   
-    height: 120vh;
-
-    width: 100%;
+    display: flex;
+    height: 150vh;
     margin-bottom: 4rem;
     
    
   }
 
   .heroLeft {
-    padding:0rem;
+    margin-top: 4rem;
+  
+    padding-inline:4rem;
     margin-inline: 1rem;
     position: absolute;
     top: 38rem;
-    width: 90%;
+    width: 650px;
+  
    
   }
 
+  .heroLeft h1{
+    margin-top: 1rem;
+
+  }
+
+  .heroLeft p {
+    font-size: 24px;
+  }
+
   .heroRight img {
-    width: 450px;
+    width: 650px;
     height: 450px;
     margin-top: 1rem;
     position: absolute;
@@ -280,11 +264,12 @@ color: var(--color-bg);
   }
 
   .heroLeft button {
-    margin-left: 3.5rem;
+    margin-left: 7.5rem;
+    margin-bottom: 1rem;
     padding-block: 1.2rem;
     padding-inline: 5rem;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 32px;
     
 }
   
@@ -293,139 +278,40 @@ color: var(--color-bg);
   .shorten-link {
     background-image: url("./assets/images/bg-shorten-mobile.svg");
     padding: 3rem;
-    width: 100%;
-    height: 25vh;
+   width: 550px;
+    height: 35vh;
     margin: 0;
-    top: 59rem;
-    left: 0;
+    top: 75rem;
+    z-index: 999;
+   
   }
 
   .shorten-link form input {
     width: 70%;
-    padding: 1.2rem;
+    padding: 1.5rem;
     position: absolute;
     top: 2rem;
     left: 4rem;
-   
-   
+    font-size: 16px;
     display: inline-block;
 }
 
 .shorten-link form button {
-  padding: 1.2rem;
+  padding: 1.5rem;
   margin-left: 1rem;
-  width: 290px;
+  margin-top: 2rem;
+  width: 70%;
   position: absolute;
   top: 7rem;
-  
-
+  left: 3rem;
   font-family: 'Roboto';
-  font-size: 16px;
-
-  
-  display: inline-block;
+  font-size: 32px;
+display: inline-block;
 }
-}
+}  
 
 
 
-/*++++++++++++++++ TABLET SCREEN +++++++++++++++*/
-@media screen and (min-width: 460px) and (max-width: 800px) {
-  .navigation {
-   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 2rem;
-  }
-  
-  .logo {
-    display: flex;
-    gap: 0.2rem;
-    align-items: center;
-  }
-  
-  .material-symbols-outlined {
-    display: none;
-  }
-  
-  .logo a,
-  .loginSection a {
-    font-size: 12px;
-    font-weight: 300;
-    margin-right: .5rem;
-    text-decoration: none;
-    color: var(--color-text);
-  }
-  
-  .loginSection {
-    margin-left: 25rem;
-  }
-  
-  .hero {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 100%;
-   
-   
-    position: relative;
-    margin-bottom: 1.5rem;
-  }
-  
-  .heroLeft {
-    margin-block: 1rem 1.5rem;
-    margin-left: 4rem;
-   
-  }
-  
-  .heroLeft h1 {
-    font-size: 32px;
-    margin-left: .5rem;
-    margin-bottom: 1rem;
-    
-  }
-  
-  .heroLeft p {
-    font-size: 16px;
-    
-    
-  }
-  
-  .heroLeft button {
-  
-    padding-block: .5rem;
-    padding-inline: 1rem;
-   
-  }
-  
-  .heroRight img {
-    width: 450px;
-    height: 320px;
-    margin-block: 1rem;
 
-   
-    padding-left: 6rem;
-  }
-  
-  .shorten-link {
- 
-    padding: .8rem;
-    width: 80%;
-   
-    top: 27rem;
-    left: 6rem;
-   
-  }
   
   
-  
-  .shorten-link form input {
-    width: 70%;
-   
-    
-  }
-  
-  
-  
-
-}
