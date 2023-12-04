@@ -265,6 +265,9 @@ left: 24px;
   top: 29rem;
 }
 
-.backToSign{
+.backPrompt{
+  position: absolute;
+  top: 0;
+  margin-left: 5px;
   
 }

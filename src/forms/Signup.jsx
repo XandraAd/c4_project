@@ -119,6 +119,7 @@ const SignUpForm = () => {
   return (
     <>
     <div className='signupForm'>
+   
     <div className='formsData'>
       <h2 className='formsheader'>Sign Up</h2>
       <h6>Get started with Shortly</h6>
@@ -191,10 +192,17 @@ const SignUpForm = () => {
             {errors.confirmPasswordError && <span className="error">{errors.confirmPasswordError}</span>}
           </label>
         </div>
-        <div>
+        <div className='signupPrompt'>
           <button type="submit" className='signupBtn'>Sign Up</button>
         </div>
         <p className='signupPrompt'>Already have an account?<Link  to='/login'> Sign in</Link></p>
+        <div>
+        <span className="material-symbols-outlined passrecsign">
+keyboard_backspace
+</span>
+        <p className='backPrompt'><Link  to='/'>Back</Link></p>
+        </div>
+   
       </form>
     </div>
     <div>
