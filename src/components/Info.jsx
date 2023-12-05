@@ -39,7 +39,8 @@ const Info = () => {
         },
       ];
   return (
-   <><div className='advance'>
+   <>
+   <div className='advance'>
     <div className='advance-text' >
     <h2>Advance Statistic</h2>
     <p>Track how your links are performing across the web with 

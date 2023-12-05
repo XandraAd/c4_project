@@ -7,6 +7,7 @@
   --color-text2: #232127;
   --color-shorten-bg: #3b3054;
   --color-primary: #2acfcf;
+  --color-hover: #80f7f7;
   --color-hero: #EBE9E9;
   --color-footer-bg: hsl(225, 11%, 22%);
   --color-danger :#F46262;
@@ -63,8 +64,10 @@ color: var(--color-bg);
 }
 
 .loginSection .signupNav:hover{
-  cursor: default;
+  cursor: pointer;
   color: var(--color-bg);
+  background-color:var(--color-hover);
+  font-weight: 700;
 }
 
 .loginSection {
@@ -74,7 +77,8 @@ color: var(--color-bg);
 .logo a:hover,
 .loginSection a:hover{
   color:var(--color-text2) ;
-  cursor: default;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .hero {
@@ -113,6 +117,15 @@ color: var(--color-bg);
   background-color: var(--color-primary);
   color: var(--color-bg);
 }
+
+.heroLeft button:hover {
+  cursor: pointer;
+  background-color:var(--color-hover);
+  color: var(--color-bg);
+  font-weight: 700;
+}
+
+
 
 .heroRight img {
   width: 450px;
@@ -154,6 +167,14 @@ color: var(--color-bg);
   color: var(--color-bg);
 }
 
+.shorten-link form button:hover {
+  cursor: pointer;
+color: var(--color-bg);
+background-color:var(--color-hover);
+font-weight: 700;
+
+}
+
 .shortened {
   display: flex;
   justify-content: space-around;
@@ -188,11 +209,18 @@ color: var(--color-bg);
   padding: .5rem;
   margin: 0rem;
   width:80px;
-
-
-  
-  
 }
+
+.form .copy-shortened-button:hover{
+  cursor: pointer;
+color: var(--color-bg);
+background-color:var(--color-hover);
+font-weight: 700;
+}
+
+
+
+
 
 .returned_link a {
   color: var(--color-primary);
